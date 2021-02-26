@@ -1,0 +1,2 @@
+# Multithreading Trading 
+A program to execute a schedule of trades limited by a certain number of stock brokers allocated to each company. Brokers can only execute one trade in a given second, so if, per say, we were to schedule three trades of Apple stock to execute at second 4, trades would be executed on seconds 4, 5, and 6, as Apple only has one stock broker. The idea is to use semaphores in a useful way - the number of permits we allocate to a semaphore (per company) is just the number of stock brokers. 
